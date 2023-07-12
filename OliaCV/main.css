@@ -142,3 +142,43 @@ img {
     color: #6D9BF5;
 }
 
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 60%;
+    }
+
+    .sidebar-text-content {
+        font-size: 100%;
+        margin: 3%;
+        padding: 5%;
+    }
+
+    .sidebar-text-content .header {
+        font-size: 140%;
+        margin: 3%;
+        padding: 5%;
+    }
+
+    .wrapper {
+        width: 100vw;
+    }
+
+    .main-content {
+        width: 50vw;
+        padding: 5%;
+    }
+
+    .sidebar {
+        width: 50vw;
+    }
+
+    img {
+        width: 50vw;
+        padding: 10% 0;
+    }
+
+    .details {
+        font-size: 50%;
+    }
+  }
+
