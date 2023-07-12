@@ -1,5 +1,5 @@
 body {
-    padding: 40px;
+    padding: 0px 40px;
     font-family: 'Montserrat', sans-serif;
     background: #e5e5e5;
 }
@@ -21,11 +21,16 @@ a {
     display: flex;
     flex-direction: row-reverse;
     background: #fff;
-    width: 1200px;
+    width: 80vw;
     margin: 0 auto;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 /* Main Content */
+
+.profile-name {
+    margin: 16px 0px 24px 0px;
+}
 
 .main-content {
     padding: 88px;
@@ -48,6 +53,11 @@ a {
 
 ol, ul {
     padding-left: 20px;
+    margin: 8px 0px 8px 0px;
+}
+
+.bottom-item {
+    margin-bottom: 42px;
 }
 
 ol > li::marker {
@@ -68,8 +78,12 @@ ol > li::marker {
     color: #6D9BF5;
 }
 
+.header {
+    margin: 42px 0px 8px 0px;
+}
+
 .semiheader {
-    margin: 32px 0px 8px 0px;
+    margin: 2px 0px 8px 0px;
 }
 
 h5 {
