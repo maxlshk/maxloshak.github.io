@@ -135,7 +135,7 @@ img {
 }
 
 .e-mail-link, .phone-number-link {
-    padding-left: 10px;
+    padding-left: 1vw;
 }
 
 .blue-bullet-points > li::marker {
@@ -145,6 +145,8 @@ img {
 @media screen and (max-width: 768px) {
     body{
         font-size: 60%;
+        padding: 1vh 2vw;
+        margin: 0px;
     }
 
     .sidebar-text-content {
@@ -160,20 +162,20 @@ img {
     }
 
     .wrapper {
-        width: 100vw;
+        width: 96vw;
     }
 
     .main-content {
-        width: 50vw;
+        width: 48vw;
         padding: 5%;
     }
 
     .sidebar {
-        width: 50vw;
+        width: 48vw;
     }
 
     img {
-        width: 50vw;
+        width: 48vw;
         padding: 10% 0;
     }
 
