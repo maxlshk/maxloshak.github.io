@@ -14,8 +14,11 @@
     <link rel="stylesheet" href="main.css" />
 
     <title>З Днем Народження!</title>
+
+    <script src="javascript.js"></script>
+
   </head>
-  <body>
+  <body class="body">
     <!-- Wrapper -->
     <div class="wrapper" id="wrapper">
       <!-- Main Content -->
@@ -143,7 +146,7 @@
             </li>
           </ul>
           <h4 class="semiheader">
-            <span class="accent">Природжені</span> таланти
+            <span class="accent">Вроджені</span> таланти
           </h4>
           <p class="details">Успішні та неуспішні люди не надто відрізняються своїми здібностями.
              Вони відрізняються лише своїм бажанням досягти максимуму свого потенціалу.</p>
@@ -152,21 +155,47 @@
             <li>Вмієш знайти спільну мову і переконати співбесідника.</li>
             <li>Просто ထ IQ 🤯</li>
           </ul>
+          <p>Ти надзвичайно кмітлива і розумна, але завжди є простір для вдосконалення,
+            тут декілька сайтів, які я сам використовую для саморозвитку і які можуть стати 
+            тобі в нагоді зараз чи в майбутньому.
+          </p>
+          <ol class="one-column-list">
+            <li>
+              <span class="list-item"><a href="https://www.coursera.org/" class="list-point">coursera.org</a></span>
+              <span class="right-item">[ HTML5, CSS3 ]</span>
+            </li>
+            <li>
+              <span class="list-item"><a href="https://uk.duolingo.com/" class="list-point">duolingo.com</a></span>
+              <span class="right-item">[ JavaScript ]</span>
+            </li>
+            <li>
+              <span class="list-item"><a href="https://prometheus.org.ua/" class="list-point">prometheus.ua</a></span>
+              <span class="right-item">[ React.js, Node.js ]</span>
+            </li>
+          </ol>
         </div>
 
       </div>
       <!-- Sidebar -->
       <aside class="sidebar">
-        <img src="assets/img/photo_2023-07-12_17-31-08.jpg" width="370px" alt="avatar" />
+        <img src="assets/img/photo-blue.jpg" width="370px" alt="avatar" id="photo" />
 
         <div class="sidebar-text-content">
           <!-- Contacts -->
-          <div>
+          <!-- <div>
             <div class="centered-text">
               Те, що я вже знаю про тебе
               <span>↓↓↓</span>
+              <details>
+                <summary>Колір сторінки</summary>
+                <div>
+                  <button onclick="changeColor('blue')" class="blue-button color-button"></button>
+                  <button onclick="changeColor('pink')" class="pink-button color-button"></button>
+                  <button onclick="changeColor('yellow')" class="yellow-button color-button"></button>
+                </div>
+              </details>
             </div>
-          </div>
+          </div> -->
 
           <!-- Tech Scills -->
           <div>
@@ -176,6 +205,7 @@
               <li>Цукерки "Королівський шарм"</li>
               <li>Шоколад "Чарівний вечір"</li>
               <li>Домашні пельмені 🥟</li>
+              <li>Рожевий колір</li>
               <li>Рожеві парфуми Victoria Secret</li>
               <li>Чоловічі парфуми Jfenzi Le Chel</li>
               <li>Читати</li>
@@ -199,7 +229,7 @@
           </div>
         </div>
         <img src="assets/img/magic150_500.png" class="sparkles"  alt="magic">
-        <div class="sidebar-text-content">
+        <div class="sidebar-text-content bottom-sidebar-text">
           <p class="sidebar-last-quote">
             Я не знаю наскільки довгим буде наше спілкування,
             але я бажаю тобі зберегти всі свої позитивні риси характеру,
@@ -216,6 +246,14 @@
             <br>
             сторінка не збирає і не використовує особисту інформацію
         </p>
+        <details>
+          <summary>Колір сторінки</summary>
+          <div>
+            <button onclick="changeColor('blue')" class="blue-button color-button"></button>
+            <button onclick="changeColor('pink')" class="pink-button color-button"></button>
+            <button onclick="changeColor('yellow')" class="yellow-button color-button"></button>
+          </div>
+        </details>
       </footer>
     </div>
   </body>

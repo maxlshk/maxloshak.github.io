@@ -1,7 +1,35 @@
+:root {
+    --mainColor: #E0EBFE;
+    --hilightColor: #6D9BF5;
+    --linkColor: #2979FF;
+    --backgroundColor: #cfd5dc;
+  }
+
+.blue {
+    --mainColor: #E0EBFE;
+    --hilightColor: #6D9BF5;
+    --linkColor: #2979FF;
+    --backgroundColor: #cfd5dc;
+}
+
+.pink {
+    --mainColor: #fee0f5;
+    --hilightColor: #f56ddc;
+    --linkColor: #ff29cd;
+    --backgroundColor: #dccfd8;
+}
+
+.yellow {
+    --mainColor: #fcfee0;
+    --hilightColor: #f5ca6d;
+    --linkColor: #ffb429;
+    --backgroundColor: #dedacc;
+}
+
 body {
     padding: 0px 40px;
     font-family: 'Montserrat', sans-serif;
-    background: #e5e5e5;
+    background: var(--backgroundColor);
 }
 
 p, li{
@@ -9,7 +37,7 @@ p, li{
 }
 
 a {
-    color: #2979FF;
+    color: var(--linkColor);
 }
 
 
@@ -79,7 +107,8 @@ ol > li::marker {
 }
 
 .accent {
-    color: #6D9BF5;
+    color: var(--hilightColor);
+
 }
 
 .header {
@@ -100,11 +129,32 @@ h5 {
     font-size: 12px;
 }
 
+.one-column-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.one-column-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.list-item {
+  flex-grow: 1;
+}
+
+.right-item {
+  margin-left: auto;
+}
+
+
 /* Sidebar */
 
 .sidebar {
+    display: grid;
     width: 370px;
-    background: #E0EBFE;
+    background: var(--mainColor);
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
 }
@@ -151,11 +201,19 @@ img {
 }
 
 .blue-bullet-points > li::marker {
-    color: #6D9BF5;
+    color: var(--hilightColor);
+}
+
+.bottom-sidebar-text{
+    display: flex;
+    flex-direction: column;
+    height: auto;
 }
 
 .sidebar-last-quote {
     line-height: normal;
+    margin-top: auto;
+    align-self: flex-end;
 }
 
 .centered-text {
@@ -170,12 +228,31 @@ img {
     grid-column: 1 / span 2;
     border-top: 1px solid #c1c1c1;
     width: auto;
-    background: #E0EBFE;
+    background: var(--mainColor);
     padding: 16px;
     text-align: center;
     font-size: 12px;
     color: #595959;
   }
+
+.color-button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.blue-button {
+    background: #6D9BF5;
+}
+
+.pink-button {
+    background: #f56ddc;
+}
+
+.yellow-button {
+    background: #f5ca6d;
+}
 
 @media screen and (max-width: 768px) {
     body{
@@ -216,6 +293,11 @@ img {
 
     .details {
         font-size: 50%;
+    }
+
+    .one-column-list li{
+        flex-direction: column;
+        align-items: start;
     }
 
     .menu-footer {
