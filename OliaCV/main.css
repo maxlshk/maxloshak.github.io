@@ -85,6 +85,7 @@ a {
 
 ol, ul {
     padding-left: 20px;
+    padding-right: 4px;
     margin: 8px 0px 8px 0px;
 }
 
@@ -92,7 +93,6 @@ ol, ul {
     border-radius: 5px;
     padding: 5px 0px;
     border: 1px dashed #A8A8A8;
-    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .bottom-item {
@@ -158,10 +158,13 @@ h5 {
 
 .sidebar {
     display: grid;
+    grid-template-rows: auto;
     width: 370px;
     background: var(--mainColor);
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
+    z-index: 2;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 img {
@@ -175,7 +178,6 @@ img {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
 }
 
 .sparkles {
@@ -238,6 +240,7 @@ img {
     text-align: center;
     font-size: 12px;
     color: #595959;
+    z-index: 2;
   }
 
 .color-button {
