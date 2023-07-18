@@ -19,12 +19,12 @@
     --backgroundColor: #dedacc;
 }
 
-.green {
+/* .green {
     --mainColor: #e0fee6;
     --hilightColor: #6ff56d;
     --linkColor: #29ff42;
     --backgroundColor: #cfdcd0;
-}
+} */
 
 body {
     padding: 0px 40px;
