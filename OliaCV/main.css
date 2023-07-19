@@ -244,7 +244,7 @@ img {
     border-top: 1px solid #c1c1c1;
     width: auto;
     background: var(--mainColor);
-    background-image: url('assets/img/bg_sidebar.png');
+    background-image: url('assets/img/bg_footer.png');
     padding: 16px;
     text-align: center;
     font-size: 12px;
