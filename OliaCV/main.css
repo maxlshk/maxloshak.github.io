@@ -72,6 +72,9 @@ a {
     box-sizing: border-box;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
+    background-image: url('assets/img/bg_main_content.png');
+    background-repeat: repeat;
+    background-position: top left;
 }
 
 .my-description {
@@ -161,6 +164,7 @@ h5 {
     grid-template-rows: auto;
     width: 370px;
     background: var(--mainColor);
+    background-image: url('assets/img/magicEdited.png');
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
     z-index: 2;
@@ -188,6 +192,7 @@ img {
 
 .sidebar-text-content li {
     color: #161D2A;
+    background: var(--mainColor);
 }
 
 .sidebar-text-content .header {
@@ -221,6 +226,7 @@ img {
     line-height: normal;
     margin-top: auto;
     align-self: flex-end;
+    background: var(--mainColor);
 }
 
 .centered-text {
