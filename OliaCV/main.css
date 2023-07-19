@@ -164,7 +164,7 @@ h5 {
     grid-template-rows: auto;
     width: 370px;
     background: var(--mainColor);
-    background-image: url('assets/img/bg_sidebar_improved.png');
+    background-image: url('assets/img/magicEdited.png');
     background-position: center center;
     background-size: contain;
     grid-column: 1 / span 1;
