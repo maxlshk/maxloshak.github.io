@@ -164,7 +164,9 @@ h5 {
     grid-template-rows: auto;
     width: 370px;
     background: var(--mainColor);
-    background-image: url('assets/img/magicEdited.png');
+    background-image: url('assets/img/bg_sidebar_improved.png');
+    background-position: center center;
+    background-size: contain;
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
     z-index: 2;
@@ -192,7 +194,7 @@ img {
 
 .sidebar-text-content li {
     color: #161D2A;
-    background: var(--mainColor);
+    /* background: var(--mainColor); */
 }
 
 .sidebar-text-content .header {
@@ -226,7 +228,7 @@ img {
     line-height: normal;
     margin-top: auto;
     align-self: flex-end;
-    background: var(--mainColor);
+    /* background: var(--mainColor); */
 }
 
 .centered-text {
@@ -242,6 +244,7 @@ img {
     border-top: 1px solid #c1c1c1;
     width: auto;
     background: var(--mainColor);
+    background-image: url('assets/img/bg_sidebar.png');
     padding: 16px;
     text-align: center;
     font-size: 12px;
@@ -258,18 +261,26 @@ img {
 
 .blue-button {
     background: #6D9BF5;
+    margin: 3px;
+    filter: blur(3px);
 }
 
 .pink-button {
     background: #f56ddc;
+    margin: 3px;
+    filter: blur(3px);
 }
 
 .yellow-button {
     background: #f5ca6d;
+    margin: 3px;
+    filter: blur(3px);
 }
 
 .green-button {
     background: #6ff56d;
+    margin: 3px;
+    filter: blur(3px);
 }
 
 @media screen and (max-width: 768px) {
