@@ -71,7 +71,7 @@ a {
     box-sizing: border-box;
     grid-column: 2 / span 1;
     grid-row: 1 / span 2;
-    background-image: url('/assets/img/bg_main_content.png');
+    background-image: url('assets/img/bg_main_content.png');
     background-repeat: repeat;
     background-position: top left;
 }
@@ -163,7 +163,7 @@ h5 {
     grid-template-rows: auto;
     width: 370px;
     background: var(--mainColor);
-    background-image: url('/assets/img/bg_sidebar.png');
+    background-image: url('assets/img/bg_sidebar.png');
     background-position: center center;
     background-size: contain;
     grid-column: 1 / span 1;
@@ -245,7 +245,7 @@ img {
     border-top: 1px solid #c1c1c1;
     width: auto;
     background: var(--mainColor);
-    background-image: url('/assets/img/bg_footer.png');
+    background-image: url('assets/img/bg_footer.png');
     padding: 16px;
     text-align: center;
     font-size: 12px;
