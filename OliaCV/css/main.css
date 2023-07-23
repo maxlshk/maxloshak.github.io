@@ -3,8 +3,6 @@
     --hilightColor: #6D9BF5;
     --linkColor: #2979FF;
     --backgroundColor: #cfd5dc;
-    --dark-color: #6D9BF5;
-    --light-color: #E0EBFE;
 }
 
 .pink {
@@ -12,8 +10,6 @@
     --hilightColor: #f56ddc;
     --linkColor: #ff29cd;
     --backgroundColor: #dccfd8;
-    --dark-color: #f56ddc;
-    --light-color: #fee0f5;
 }
 
 .yellow {
@@ -21,8 +17,6 @@
     --hilightColor: #f5ca6d;
     --linkColor: #ffb429;
     --backgroundColor: #dedacc;
-    --dark-color: #f5ca6d;
-    --light-color: #fcfee0;
 }
 
 /* .green {
@@ -50,8 +44,6 @@ a {
 .underlined {
     text-decoration: dashed underline;
 }
-
-
 
 
 .wrapper {

@@ -1,8 +1,3 @@
-/* :root {
-  --dark-color: #635bff;
-  --light-color: #80e9ff;
-} */
-
 svg {
   width: 100vw;
   height: 100vh;
@@ -14,31 +9,23 @@ svg {
 }
 
 #darkGroup {
-  fill: var(--dark-color);
+  fill: var(--hilightColor);
 }
 
 #lightGroup {
-  fill: var(--light-color);
+  fill: var(--mainColor);
 }
 
 #light1,
 #light2{
-  transition: all 2s ease;
   transform: translateY(-110%);
   width: 25vw;
 }
 
 #dark1,
 #dark2 {
-  transition: all 2s ease;
   transform: translateY(110%);
   width: 25vw;
-}
-
-.run-animation #light1,
-.run-animation #light2 {
-  animation: up 3s;
-  animation-direction: normal alternate;
 }
 
 @keyframes up {
@@ -63,7 +50,12 @@ svg {
 
 .run-animation #dark1,
 .run-animation #dark2 {
-  animation: down 3s;
+  animation: down 3s ease;
   animation-direction: normal;
-  /* animation-delay: 0.3s; */
+}
+
+.run-animation #light1,
+.run-animation #light2 {
+  animation: up 3s ease;
+  animation-direction: normal;
 }
