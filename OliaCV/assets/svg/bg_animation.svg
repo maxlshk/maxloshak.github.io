@@ -1,0 +1,17 @@
+<svg width="180" height="270" viewBox="0 0 180 270" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1" clip-path="url(#clip0_1_2)">
+<g id="lightDroup">
+<path id="light1" d="M0 202C0 196.477 4.47715 192 10 192H47C52.5228 192 57 196.477 57 202V270H28.5H0V202Z" fill="#59B4F6"/>
+<path id="light2" d="M90 202C90 196.477 94.4772 192 100 192H140C145.523 192 150 196.477 150 202V270H120H90V202Z" fill="#59B4F6"/>
+</g>
+<g id="darkGroup">
+<path id="dark1" opacity="0.7" d="M45 202C45 196.477 49.4772 192 55 192H93C98.5229 192 103 196.477 103 202V270H74H45V202Z" fill="#413EC5"/>
+<path id="dark2" opacity="0.7" d="M135 202C135 196.477 139.477 192 145 192H181C186.523 192 191 196.477 191 202V270H163H135V202Z" fill="#413EC5"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_1_2">
+<rect width="180" height="270" fill="white"/>
+</clipPath>
+</defs>
+</svg>

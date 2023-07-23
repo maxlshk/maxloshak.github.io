@@ -1,0 +1,69 @@
+/* :root {
+  --dark-color: #635bff;
+  --light-color: #80e9ff;
+} */
+
+svg {
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: fixed;
+  pointer-events: none;
+  top: 0px;
+  left: 0px;
+}
+
+#darkGroup {
+  fill: var(--dark-color);
+}
+
+#lightGroup {
+  fill: var(--light-color);
+}
+
+#light1,
+#light2{
+  transition: all 2s ease;
+  transform: translateY(-110%);
+  width: 25vw;
+}
+
+#dark1,
+#dark2 {
+  transition: all 2s ease;
+  transform: translateY(110%);
+  width: 25vw;
+}
+
+.run-animation #light1,
+.run-animation #light2 {
+  animation: up 3s;
+  animation-direction: normal alternate;
+}
+
+@keyframes up {
+  from {
+    transform: translateY(110%);
+  }
+
+  to {
+    transform: translateY(-110%);
+  }
+}
+
+@keyframes down {
+  from {
+    transform: translateY(-110%);
+  }
+
+  to {
+    transform: translateY(110%);
+  }
+}
+
+.run-animation #dark1,
+.run-animation #dark2 {
+  animation: down 3s;
+  animation-direction: normal;
+  /* animation-delay: 0.3s; */
+}
