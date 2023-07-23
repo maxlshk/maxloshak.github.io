@@ -20,12 +20,14 @@ svg {
 #light2{
   transform: translateY(-110%);
   width: 25vw;
+  filter: blur(1px);
 }
 
 #dark1,
 #dark2 {
   transform: translateY(110%);
   width: 25vw;
+  
 }
 
 @keyframes up {
