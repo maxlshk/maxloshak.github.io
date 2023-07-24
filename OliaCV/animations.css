@@ -51,3 +51,40 @@ svg {
   animation: up 1.7s ease-in-out;
   animation-direction: normal;
 }
+
+.hidden {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animated-points:nth-child(1) {
+  transition-delay: 200ms;
+}
+
+.animated-points:nth-child(2) {
+  transition-delay: 400ms;
+}
+
+.animated-points:nth-child(3) {
+  transition-delay: 600ms;
+}
+
+.animated-points:nth-child(4) {
+  transition-delay: 800ms;
+}
+
+.animated-points:nth-child(5) {
+  transition-delay: 1000ms;
+}
+
+@media (prefers-reduced-motion) {
+  body * {
+    transition: none;
+  }
+}
