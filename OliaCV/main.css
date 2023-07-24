@@ -38,7 +38,7 @@ p, li{
 
 a {
     color: var(--linkColor);
-    transition: all 2s ease;
+    transition: all 2.4s ease;
 }
 
 .underlined {
@@ -120,7 +120,7 @@ ol > li::marker {
 
 .accent {
     color: var(--hilightColor);
-    transition: all 2s ease;
+    transition: all 2.4s ease;
 }
 
 .header {
@@ -170,7 +170,7 @@ h5 {
     grid-row: 1 / span 2;
     z-index: 2;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    transition: all 2s ease;
+    transition: all 2.4s ease;
 }
 
 img {
@@ -216,7 +216,7 @@ img {
 
 .blue-bullet-points > li::marker {
     color: var(--hilightColor);
-    transition: all 2s ease;
+    transition: all 2.4s ease;
 }
 
 .bottom-sidebar-text{
@@ -251,7 +251,7 @@ img {
     font-size: 12px;
     color: #595959;
     z-index: 2;
-    transition: all 2s ease;
+    transition: all 2.4s ease;
   }
 
 .color-button {

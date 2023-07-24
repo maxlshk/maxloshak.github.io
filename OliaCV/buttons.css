@@ -40,24 +40,14 @@ svg {
   }
 }
 
-@keyframes down {
-  from {
-    transform: translateY(-110%);
-  }
-
-  to {
-    transform: translateY(110%);
-  }
-}
-
 .run-animation #dark1,
 .run-animation #dark2 {
-  animation: down 3s ease;
-  animation-direction: normal;
+  animation: up 1.7s ease-in-out;
+  animation-direction: reverse;
 }
 
 .run-animation #light1,
 .run-animation #light2 {
-  animation: up 3s ease;
+  animation: up 1.7s ease-in-out;
   animation-direction: normal;
 }
