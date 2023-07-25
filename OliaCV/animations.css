@@ -52,54 +52,42 @@ svg {
   animation-direction: normal;
 }
 
-.hidden {
-  opacity: 0;
-  transform: translateX(50%);
-  transition: all 1s;
+.accent.hidden{
+  opacity: 1;
+  transform: translateX(0);
+  transition: color 3s;
 }
 
-    .accent.hidden{
-      opacity: 1;
-      transform: translateX(0);
-      transition: all 3s;
-    }
+.right-item.hidden{
+  opacity: 0;
+  transform: translateX(-70%);
+  transition: transform 1s, opacity 1s;
+}
 
-    .right-item.hidden{
-      transform: translateX(-70%);
-    }
+.brain.hidden{
+  opacity: 0;
+  scale: 0.1;
+  transition: opacity 1s, scale 1s;
+}
 
-    .animated-list.hidden{
-      opacity: 1;
-      transform: translateX(0);
-      transition: none;
-    }
+.accent.show {
+  color: var(--hilightColor);
+}
 
-    .brain.hidden{
-      scale: 0.1;
-      transform: translateX(0);
-    }
-
-.show {
+.right-item.show {
   opacity: 1;
   transform: translateX(0);
 }
 
-    .accent.show {
-      color: var(--hilightColor);
-    }
-
-    .right-item.show {
-      transform: translateX(0);
-    }
-
-    .brain.show {
-      scale: 1;
-    }
+.brain.show {
+  opacity: 1;
+  scale: 1;
+}
 
 .invisible {
   opacity: 0;
   transform: translateX(50%);
-  transition: all 1s;
+  transition: transform 1s, opacity 1s;
 }
 
 .visible{
