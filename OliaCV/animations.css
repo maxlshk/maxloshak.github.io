@@ -17,7 +17,7 @@ svg {
 }
 
 #light1,
-#light2{
+#light2 {
   transform: translateY(-110%);
   width: 25vw;
   filter: blur(1px);
@@ -27,7 +27,7 @@ svg {
 #dark2 {
   transform: translateY(110%);
   width: 25vw;
-  
+
 }
 
 @keyframes up {
@@ -52,19 +52,24 @@ svg {
   animation-direction: normal;
 }
 
-.accent.hidden{
+.accent.hidden {
   opacity: 1;
   transform: translateX(0);
   transition: color 3s;
 }
 
-.right-item.hidden{
+.details.hidden {
+  transform: translateY(-100%);
+  transition: transform 1s;
+}
+
+.right-item.hidden {
   opacity: 0;
   transform: translateX(-70%);
   transition: transform 1s, opacity 1s;
 }
 
-.brain.hidden{
+.brain.hidden {
   opacity: 0;
   scale: 0.1;
   transition: opacity 1s, scale 1s;
@@ -72,6 +77,10 @@ svg {
 
 .accent.show {
   color: var(--hilightColor);
+}
+
+.details.show {
+  transform: translateY(0);
 }
 
 .right-item.show {
@@ -90,7 +99,7 @@ svg {
   transition: transform 1s, opacity 1s;
 }
 
-.visible{
+.visible {
   opacity: 1;
   transform: translateX(0);
 }
