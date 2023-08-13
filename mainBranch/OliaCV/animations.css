@@ -58,11 +58,6 @@ svg {
   transition: color 3s;
 }
 
-.details.hidden {
-  transform: translateY(-100%);
-  transition: transform 1s;
-}
-
 .right-item.hidden {
   opacity: 0;
   transform: translateX(-70%);
@@ -77,10 +72,6 @@ svg {
 
 .accent.show {
   color: var(--hilightColor);
-}
-
-.details.show {
-  transform: translateY(0);
 }
 
 .right-item.show {
