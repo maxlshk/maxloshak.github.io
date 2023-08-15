@@ -4,7 +4,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import useIntersectionObserver from "../hooks/useIntersectionObserver";
 import React from "react";
 
-const Card = ({ title, description, imageSrc, position, link }) => {
+const Card = ({ title, description, imageSrc, position, link, access }) => {
   const [isVisible, setIsVisible] = React.useState(false);
 
   const vStackRef = useIntersectionObserver((intersecting) => {
