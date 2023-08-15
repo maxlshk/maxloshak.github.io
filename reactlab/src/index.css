@@ -15,3 +15,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.hiddenBottom {
+  opacity: 0;
+  transform: translateY(80%);
+  transition: transform 1s, opacity 0.8s;
+}
+
+.hiddenLeft {
+  opacity: 0;
+  transform: translateX(-10%);
+  transition: transform 1s, opacity 0.8s;
+}
+
+.hiddenRight {
+  opacity: 0;
+  transform: translateX(10%);
+  transition: transform 1s, opacity 0.8s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
+  transition: transform 1s, opacity 0.8s;
+}
+
+.navigation-button {
+  cursor: pointer;
+}

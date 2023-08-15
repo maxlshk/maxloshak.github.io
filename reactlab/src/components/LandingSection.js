@@ -26,7 +26,7 @@ const LandingSection = () => {
       backgroundColor="#2A4365"
     >
       <VStack className={isVisible ? "show" : "hiddenBottom"} ref={vStackRef}>
-        <Avatar src={() => require("../images/programmer.png")} size="3xl" />
+        <Avatar src={require("../images/profilePic1_auto_x22.jpg")} width='300px' height='300px' />
         <p>{greeting}</p>
         <Heading>{bio1}</Heading>
         <Heading>{bio2}</Heading>

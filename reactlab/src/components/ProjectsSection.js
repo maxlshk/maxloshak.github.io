@@ -36,13 +36,14 @@ const projects = [
     title: "KMA Pizza",
     description: "A web page for KMA Pizza fastfood restoraunt 🍕 (non-comercial). Developed using bootstrap CSS framework",
     getImageSrc: () => require("../images/photo5.jpg"),
-    link: "JS-Pizza/Frontend/www/index.html"
+    link: "mainBranch/JS-Pizza/Frontend/www/index.html"
   },
   {
     title: "Birthday Card",
     description: "Wonderful birthday present designed as resume-style birthday card. Tracked access only",
     getImageSrc: () => require("../images/photo9.jpg"),
-    link: "OliaCV/index.html"
+    link: "mainBranch/OliaCV/index.html",
+    access: "private"
   }
 ];
 
@@ -71,6 +72,7 @@ const ProjectsSection = () => {
             imageSrc={project.getImageSrc()}
             position={index % 2 === 0 ? "Left" : "Right"}
             link={project.link}
+            access={project.access}
           />
         ))}
       </Box>
