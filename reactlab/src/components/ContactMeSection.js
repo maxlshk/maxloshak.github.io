@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import {
   Box,
@@ -19,6 +19,7 @@ import { useAlertContext } from "../context/alertContext";
 
 const LandingSection = () => {
   const { isLoading, response, submit } = useSubmit();
+  const [submissionResponse, setSubmissionResponse] = useState(null);
   const { onOpen } = useAlertContext();
 
   const validationSchema = Yup.object().shape({
@@ -35,20 +36,37 @@ const LandingSection = () => {
       type: "",
       comment: ""
     },
-    onSubmit: (values) => {
-      submit("", values);
+    onSubmit: async (values) => {
+      try {
+        const response = await fetch('http://localhost:5000/api/submit-form', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(values)
+        });
+
+        const data = await response.json();
+        setSubmissionResponse(data); // Set the submission response in state
+
+      } catch (error) {
+        console.error("Error submitting form:", error);
+        setSubmissionResponse({ success: false, message: "An error occurred while submitting the form." });
+      }
     },
     validationSchema: validationSchema,
   });
 
   useEffect(() => {
-    if (response && response.type === "success") {
-      onOpen("success", response.message);
-      formik.resetForm();
-    } else if (response && response.type === "error") {
-      onOpen("error", response.message);
+    if (submissionResponse) {
+      if (submissionResponse.success) {
+        onOpen("success", submissionResponse.message);
+        formik.resetForm();
+      } else {
+        onOpen("error", submissionResponse.message);
+      }
     }
-  }, [response]);
+  }, [submissionResponse]);
 
   return (
     <FullScreenSection

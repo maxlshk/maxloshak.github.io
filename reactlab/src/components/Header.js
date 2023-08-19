@@ -20,15 +20,15 @@ const socials = [
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.comwww.linkedin.com/in/max-loshak-a5b912288",
   },
   {
     icon: faMedium,
-    url: "https://medium.com",
+    url: "https://medium.com/@max.loshak.i",
   },
   {
     icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    url: "https://stackoverflow.com/users/22394460/max-loshak",
   },
 ];
 

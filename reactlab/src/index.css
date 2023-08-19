@@ -43,3 +43,7 @@ code {
 .navigation-button {
   cursor: pointer;
 }
+
+option {
+  color: rgb(113, 28, 193);
+}
