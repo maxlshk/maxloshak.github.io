@@ -16,7 +16,7 @@ function setColor(color) {
     body.classList.add(color);
 
     var photo = document.getElementById('photo');
-    photo.src = 'assets/img/photo-' + color + '.jpg';
+    photo.src = 'assets/img/profile-' + color + '.jpg';
 
     // Save the selected color to Local Storage
     localStorage.setItem("selectedColor", color);
