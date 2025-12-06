@@ -30,17 +30,66 @@
           <h5>Найкраща і найдорожча</h5>
           <h1 class="profile-name">Софієчка &#60;З</h1>
           <p>
-            Пройшло вже дев'ять місяців від нашої першої зустрічі та 
-            вже чотири місяці, як я можу називати себе твоїм хлопцем, і з кожним днем, 
-            що ми разом, я все більше усвідомлюю, наскільки мені пощастило. 
-            З тобою звичайні моменти перетворюються на щось особливе: 
-            невеличкі розмови, історії та спогади, навіть тиша, коли ми просто мовчимо поруч.
-            Якби хтось місяць тому сказав мені, що я можу любити тебе сильніше, я б не повірив. 
-            Але сьогодні я розумію, що з тобою все можливо
+            У це світле свято я хочу нагадати тобі, наскільки ти для мене
+            важлива. Навіть зараз, коли ти не тут, я відчуваю твоє тепло так,
+            ніби ти поруч. Мені не потрібні дарунки, щоб відчути свято, мені
+            просто потрібно знати, що ти щаслива. Дякую, що ти в мене є, що
+            надихаєш і любиш. Ти — моя радість сьогодні й завжди.
             <br />
             （づ￣3￣）づ╭❤️～
           </p>
         </div>
+
+        <!-- Gift Box Modals -->
+        <div class="gift-modal" id="giftModal0">
+          <div class="gift-modal-content">
+            <span class="gift-modal-close" onclick="closeGiftBox(0)"
+              >&times;</span
+            >
+            <div class="gift-modal-inner">
+              <h3>💝 Love love love</h3>
+              <div class="gift-photo-container">
+                <img src="assets/img/jolly-picture.jpg" alt="Special memory" />
+              </div>
+              <p class="gift-message">
+                Ти - найкращий подарунок, який коли-небудь з'явився в моєму
+                житті. Кожен день з тобою - це свято! ❄️💕
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gift-modal" id="giftModal1">
+          <div class="gift-modal-content">
+            <span class="gift-modal-close" onclick="closeGiftBox(1)"
+              >&times;</span
+            >
+            <div class="gift-modal-inner">
+              <h3>🍫 Солоденьке для тебе</h3>
+              <div class="wolt-gift-code">
+                <p class="wolt-intro">
+                  Сьогодні особливий день, тому я хочу, щоб ти могла пакушать
+                  щось смачненьке! Використай цей код у Wolt:
+                </p>
+                <div class="wolt-code-box">
+                  <span class="wolt-code-label">Подарунковий код:</span>
+                  <div class="wolt-code-value" onclick="copyWoltCode()">
+                    <span id="woltCode">3FTXKVJP</span>
+                    <span class="copy-hint">Натисни, щоб скопіювати</span>
+                  </div>
+                  <a
+                    href="https://wolt.com/en/me/redeem-code?code=3FTXKVJP"
+                    target="_blank"
+                    class="wolt-redeem-button"
+                  >
+                    ЛЕТС ГОУУ :)
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="work-experience">
           <h2 class="header">Щирість :)</h2>
 
@@ -70,11 +119,11 @@
               </ul>
             </div>
             <p class="bottom-item">
-              Я спілкувався з багатьма людьми зі свого оточення, людьми,
-              яких я вважав розумними, талановитими, кмітливими, але серед всіх
-              них все рівно не було жодної такої відкритої, щирої і комфортної людини,
-              як ти. Твоя щирість і ставлення до людей прекрасні, ти
-              випромінюєш тепло і любов.
+              Я спілкувався з багатьма людьми зі свого оточення, людьми, яких я
+              вважав розумними, талановитими, кмітливими, але серед всіх них все
+              рівно не було жодної такої відкритої, щирої і комфортної людини,
+              як ти. Твоя щирість і ставлення до людей прекрасні, ти випромінюєш
+              тепло і любов.
               <br />
               (●'◡'●)
             </p>
@@ -93,9 +142,7 @@
                 <li class="animated-points invisible">
                   Побачити полярне сяйво.
                 </li>
-                <li class="animated-points invisible">
-                  Жити на фермі.
-                </li>
+                <li class="animated-points invisible">Жити на фермі.</li>
                 <li class="animated-points invisible">
                   Мати свого коня (я теж його хочу😂).
                 </li>
@@ -107,10 +154,10 @@
             </div>
 
             <p class="bottom-item">
-              Мені неймовірно подобається, що твої мрії й цілі такі різні й справжні — 
-              від величі природи до тепла домашнього затишку. 
-              Вони розкривають тебе як глибоку та чуйну людину, 
-              і я дуже хочу, щоб кожна з них стала твоєю реальністю.
+              Мені неймовірно подобається, що твої мрії й цілі такі різні й
+              справжні — від величі природи до тепла домашнього затишку. Вони
+              розкривають тебе як глибоку та чуйну людину, і я дуже хочу, щоб
+              кожна з них стала твоєю реальністю.
             </p>
           </div>
           <div>
@@ -149,16 +196,19 @@
             Твоє світло <span class="brain hidden">✨</span>
           </h2>
           <h4 class="semiheader">
-            <span class="accent hidden">Талановита</span> та <span class="accent hidden">натхненна</span>
+            <span class="accent hidden">Талановита</span> та
+            <span class="accent hidden">натхненна</span>
           </h4>
-          <p class="details">Ти не просто створюєш мистецтво, ти сама є мистецтвом.</p>
+          <p class="details">
+            Ти не просто створюєш мистецтво, ти сама є мистецтвом.
+          </p>
           <div class="bordered-list">
             <ul class="animated-list hidden">
               <li class="animated-points invisible">
-                Пишеш зворушливі вірші, що йдуть від самого серця. 
+                Пишеш зворушливі вірші, що йдуть від самого серця.
               </li>
               <li class="animated-points invisible">
-                Захоплюєшся літературою, знаходячи в ній силу та істини. 
+                Захоплюєшся літературою, знаходячи в ній силу та істини.
               </li>
               <li class="animated-points invisible">
                 Природні лідерські якості, які ведуть за собою команду.
@@ -167,15 +217,80 @@
                 Несеш у світ красиву енергію та творчу іскру.
               </li>
             </ul>
-            <p class="bottom-item">
-            Твоя творча енергія неймовірно надихає.
-            Вона оживає у кожному рядку твоїх віршів, у любові до мудрих книг і в радісті, з якою ти створюєш щось нове. 
-          </p>
           </div>
-          
+          <p class="bottom-item">
+            Твоя творча енергія неймовірно надихає. Вона оживає у кожному рядку
+            твоїх віршів, у любові до мудрих книг і в радісті, з якою ти
+            створюєш щось нове.
+          </p>
+        </div>
 
+        <!-- Saint Nicholas Memory Gallery -->
+        <!-- <div class="memory-gallery">
+          <h2 class="header">
+            Наші спогади <span class="brain hidden">❄️</span>
+          </h2>
+          <p class="details">Кожна фотографія - це маленька історія про нас</p>
+          <div class="gallery-grid" id="galleryGrid">
+            <div class="gallery-item" onclick="openMemoryModal(0)">
+              <img src="assets/img/photo_cute.jpg" alt="Memory 1" />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Перша зустріч 💕</p>
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openMemoryModal(1)">
+              <img src="assets/img/photo_slay.jpg" alt="Memory 2" />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Ти завжди сяєш ✨</p>
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openMemoryModal(2)">
+              <img src="assets/img/photo_w_nastia.jpg" alt="Memory 3" />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Дружба та любов 🤗</p>
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openMemoryModal(3)">
+              <img
+                src="assets/img/photo_depeche_mode_with_me.jpg"
+                alt="Memory 4"
+              />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Наші моменти разом 💖</p>
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openMemoryModal(4)">
+              <img src="assets/img/photo_new_haircut.jpg" alt="Memory 5" />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Нова ти, така ж прекрасна 🌟</p>
+              </div>
+            </div>
+            <div class="gallery-item" onclick="openMemoryModal(5)">
+              <img src="assets/img/photo_w_cat.jpg" alt="Memory 6" />
+              <div class="gallery-overlay">
+                <p class="gallery-message">Твоя доброта до тварин 🐱</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
 
-
+        <!-- Saint Nicholas Gift Boxes -->
+        <div class="gift-boxes-section">
+          <h2 class="header">
+            Подарунки від Святого Миколая <span class="brain hidden">🎁</span>
+          </h2>
+          <div class="gifts-container">
+            <div class="gift-box" onclick="openGiftBox(0)">
+              <img src="assets/img/letter.png" alt="Letter" class="gift-icon" />
+            </div>
+            <div class="gift-box" onclick="openGiftBox(1)">
+              <img
+                src="assets/img/christmas-sock.png"
+                alt="Christmas Sock"
+                class="gift-icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <!-- Sidebar -->
@@ -188,10 +303,12 @@
         />
 
         <div class="sidebar-text-content">
-
           <div>
             <h2 class="header">Найкраще про тебе &#60;З</h2>
             <ul class="pink-bullet-points">
+              <li>Унікальний стиль</li>
+              <li>Емоційний інтелект</li>
+              <li>Здатність надихати</li>
               <li>Чудовий характер</li>
               <li>Блискуча посмішка</li>
               <li>Проникливий розум</li>
@@ -201,10 +318,18 @@
             </ul>
           </div>
         </div>
-        <img src="assets/img/background.png" class="sparkles" alt="magic" />
+        <img
+          src="assets/img/background.png"
+          class="sparkles"
+          alt="magic"
+          id="sparkles"
+        />
+
         <div class="sidebar-text-content bottom-sidebar-text">
           <p class="sidebar-last-quote">
-            Я не знаю що для нас готує життя, але я ціную кожен момент коли ти поряд 🤗
+            Я й без Святого Миколая знаю, ти точно була дуже гарною дівчиною
+            цього року! 😊 Тому ось тобі маленькі подаруночки. Сподіваюся, вони
+            принесуть тобі трохи радості в цей особливий день 💝
           </p>
           <h5>Люблю тебе, кицюня</h5>
         </div>
@@ -275,5 +400,17 @@
         </clipPath>
       </defs>
     </svg>
+
+    <!-- Snowflake Animation Container -->
+    <div id="snowflakes-container"></div>
+
+    <!-- Memory Modal -->
+    <div class="memory-modal" id="memoryModal">
+      <div class="modal-content">
+        <span class="modal-close" onclick="closeMemoryModal()">&times;</span>
+        <img id="modalImage" src="" alt="Memory" />
+        <div class="modal-message" id="modalMessage"></div>
+      </div>
+    </div>
   </body>
 </html>
